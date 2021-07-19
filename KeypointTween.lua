@@ -83,9 +83,10 @@ function module.property(instance, property, points, easing)
 			
 			for i, point in pairs(self.points) do
 				if point.time <= self.t and self.points[i+1] and self.t <= self.points[i+1].time then
+					local easing = point.easing or self.easing
 					local x = point.value
 					local y = self.points[i+1].value
-					local goal = (lerp(x, y, self.easing((self.t - point.time) / (self.points[i+1].time - point.time))))
+					local goal = (lerp(x, y, easing((self.t - point.time) / (self.points[i+1].time - point.time))))
 					self.instance[property] = goal
 					break
 				end
