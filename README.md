@@ -1,9 +1,10 @@
 # Effect System
 Roblox Effect System
 
-- [Effect System](#effect-system)
+- Effect System
   * [Dependencies](#dependencies)
   * [Documentation](#documentation)
+- Sub-Modules
   * [Keypoint Tween](#keypoint-tween)
 
 ## Dependencies
