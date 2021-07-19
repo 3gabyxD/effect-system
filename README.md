@@ -1,6 +1,11 @@
 # Effect System
 Roblox Effect System
 
+- [Effect System](#effect-system)
+  * [Dependencies](#dependencies)
+  * [Documentation](#documentation)
+  * [Keypoint Tween](#keypoint-tween)
+
 ## Dependencies
 - [ClockSync](https://github.com/Kenji-Shore/Roblox-Client-Server-Time-Sync-Module)
 
