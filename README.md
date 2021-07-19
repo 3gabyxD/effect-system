@@ -1,4 +1,4 @@
-# effect-system
+# Effect System
 Roblox Effect System
 
 ## Dependencies
