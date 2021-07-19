@@ -43,3 +43,35 @@ effect:cast(
 	arguments
 )
 ```
+
+## Keypoint Tween
+Require Keypoint Tween
+```lua
+local keypointTween = requite(...:WaitForChild("KeypointTween"))
+```
+
+Tweening property
+```lua
+local tween = keypointTween.property(
+	instance (instance)
+	property (string)
+	points (array)
+	{
+		point (dictionary)[time, value]
+	}
+	easing (function)
+)
+```
+
+Example
+```lua
+local tween = keypointTween.property(
+	cylinder,
+	"Size",
+	{
+		{time = 0.3, value = Vector3.new(50, 9, 9)}
+	}
+)
+
+tween:play() -- or tween:Play()
+```
