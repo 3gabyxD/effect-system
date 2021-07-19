@@ -71,11 +71,15 @@ local tween = keypointTween.property(
 
 Example
 ```lua
+local function easeIn(t)
+	return t*t
+end
+
 local tween = keypointTween.property(
 	cylinder,
 	"Size",
 	{
-		{time = 0.3, value = Vector3.new(50, 9, 9)}
+		{time = 0.3, value = Vector3.new(50, 9, 9), easeIn}
 	}
 )
 
