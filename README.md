@@ -24,7 +24,7 @@ end
 return effectModule
 ```
 
-Create a new effect (make sure `effectModule` is visible to players)
+Create a new effect (make sure `effectModule` is accessible from client)
 ```lua
 local effect = effectSystem.new(
 	name (string)
