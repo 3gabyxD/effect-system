@@ -63,7 +63,7 @@ local tween = keypointTween.property(
 	property (string)
 	points (array)
 	{
-		point (dictionary)[time, value]
+		point (dictionary)[time, value, easing(optional)]
 	}
 	easing (function)
 )
